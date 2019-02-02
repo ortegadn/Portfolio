@@ -1,16 +1,137 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Portfolio</title>
+    <title>Erick Ortega | Portafolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <script src="main.js"></script>
 </head>
-<body>
-    <header>
 
+<body>
+    <header class="header-container">
+        <div class="site-container">
+            <!--LOGO-->
+            <div class="site-logo">
+                <img src="images/logoEO.jpg" alt="logo">
+            </div>
+            <!--BARRA DE NAVEGACIÓN-->
+            <nav class="site-navbar">
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#acerca">Sobre mi</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
+    <div class="contenido">
+    <!--INICIO-->
+        <div class="home-container" id="home">
+            <h1>ERICK ORTEGA</h1>
+            <h2>Desarrollador Web</h2>
+            <h2>Estudiante</h2>
+        </div>
+
+    <!--SOBRE MI-->
+    <div class="about" id="acerca">
+        <h2 class="titulos_secciones">Sobre mi</h2>
+        <figure>
+            <img src="images/IMG_1018 (3).JPG" alt="fotoMia">
+        </figure> 
+        <div class="descripcion_about">
+            <p>Hola! soy Erick Ortega. Actualmente soy estudiante de Ingeniería en Sistemas en la Universidad Metropolitana. </br>
+            Desde hace aproximadamente 2 años me introduje en el mundo del diseño web, por medio de cursos prácticos de HTML, CSS y JavaScript
+            por ello a día de hoy tengo algo de experiencia. También he desarrollado páginas web en WordPress, las cuales podrán ver en la sección de "Proyectos Realizados".</br>
+            Ahora me encuentro aprendiendo nuevos lenguajes de programación, expandiendo mis conocimientos de sistemas, con el objetivo de que algún día pueda dedicarme a la Inteligencia
+            Artificial, una área que me llama bastante la atención. Como pasatiempos, disfruto jugar tennis, es un deporte que se me dio muy bien desde el primer día que lo practiqué.
+
+            </p>
+        </div> 
+    </div>
+
+    <!--HABILIDADES-->
+    <div class="habilidades" id="skills">
+            <h2 class="titulos_secciones">Habilidades</h2>
+            <div class="lista_habilidades">
+                <ul>
+                    <li>
+                        <i class="fab fa-html5 fa-5x"></i>
+                        <p>Conocimiento medio en HTML5</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-css3 fa-5x"></i>
+                        <p>Conocimiento medio en CSS</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-css3 fa-5x"></i>
+                        <p>Conocimiento medio en JAVA</p>
+                    </li>
+                </ul> 
+            </div>        
+    </div>    
+
+    <!--PROYECTOS-->
+    <div class="projects" id="proyectos">
+        <h2 class="titulos_secciones">Proyectos Realizados</h2>
+        <h3>En los últimos dos años he desarrollado diferentes páginas web en WordPress</h3>
+        <ul class="lista_proyectos">
+            <li>
+                <figure>
+                    <img src="images/aguarenadesign.png" alt="aguarena">
+                    <figcaption><a href="http://aguarenadesign.com.ve/">Diseños Aguarena</a></figcaption>
+                </figure>                             
+            </li>
+            <li>
+                <figure>
+                    <img src="images/aicsoluciones.png" alt="AIC">
+                    <figcaption><a href="http://www.aicsoluciones.com/site/">AIC Soluciones C.A.</a></figcaption>
+                </figure>                     
+            </li>
+            <li>
+                <figure>
+                    <img src="images/plasticosfm.png" alt="plasticosfm">
+                    <figcaption><a href="http://www.plasticosfm.com/site/">Plásticos FM</a></figcaption>
+                </figure>                             
+            </li>
+        </ul>
+    </div>
+
+    <!--CONTACTO-->
+    <div class="contacto" id="contact">
+        <h2 class="titulos_secciones">Contacto</h2>
+        <form action="">
+            <p>Nombre</p>
+            <input type="text" class="field"> </br>
+
+            <p>Correo electrónico</p>
+            <input type="text" class="field"></br>
+
+            <p>Asunto</p>
+            <input type="text" class="field"></br>
+
+            <p>Mensaje</p>
+            <textarea class="field"></textarea> </br>
+            
+            <p class="centrar_contenido"><input type="submit" class="btn" value="Enviar"></p>
+        </form>
+        <footer>
+                <div class="redes">
+                    <a href="https://www.instagram.com/erickortegadn/"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="https://twitter.com/ortegadn21"><i class="fab fa-twitter fa-2x"></i></a>  
+                </div>
+        </footer>
+    </div>
+    
+</div>
+    
 </body>
 </html>
